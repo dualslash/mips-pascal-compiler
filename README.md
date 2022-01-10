@@ -1,1 +1,1 @@
-# subset-pascal-compiler
+# MIPS Pascal Compiler
