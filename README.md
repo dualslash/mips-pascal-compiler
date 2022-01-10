@@ -1,6 +1,13 @@
 # MIPS Pascal Compiler
 
-A Pascal Compiler for the MIPS Architecture. Written for Unix/GCC in C++, using lex/yacc for parsing and Perl for unit tests.
+A Pascal Compiler for the MIPS Architecture. Written for Unix in C++, using lex/yacc for parsing and Perl for unit tests.
+
+## Requirements
+
+* Unix Environment
+* GCC/G++
+* SPIM `sudo apt-get install spim`
+
 
 ## Usage
 
