@@ -1,0 +1,18 @@
+program fact;
+
+var 
+	n,f: integer;
+
+function factorial(a: integer): integer;
+begin
+  if (a > 1) then
+    factorial := a * factorial(a-1)
+  else
+    factorial := 1
+end;
+
+begin
+  n := readinteger;
+  f := factorial(n);
+  writeinteger(f)
+end.

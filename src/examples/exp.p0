@@ -1,0 +1,23 @@
+program exp;
+
+var 
+	a,x: real;
+	
+var
+	n: integer;
+
+function foo(f: real; g: integer): real;
+begin
+	if (g <= 0) then
+		foo := 1
+	else
+		foo := f * foo(f,g-1)
+end;
+
+begin
+  x := readreal;
+  n := readinteger;
+  
+  a := foo(x,n);
+  writereal(a)
+end.

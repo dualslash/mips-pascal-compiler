@@ -1,0 +1,27 @@
+program fib;
+
+var 
+	n,x: integer;
+
+function foo(a: integer): integer;
+begin
+	if (a < 2) then
+	begin
+		foo := 1
+	end
+	else
+	begin
+  	foo := foo(a-1) + foo(a-2)
+  end
+end;
+
+begin
+    n := readinteger;
+    if (n >= 1) then
+		  begin
+		  	x := foo(n);
+		  	writeinteger(x)
+		 	end
+    else
+    	writeinteger(0)
+end.
