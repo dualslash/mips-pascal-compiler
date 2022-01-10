@@ -17,9 +17,9 @@ bool bOptimize1 = false;
 
 
 /* Extern functions */
-int yyparse();                // The parser
-int yylex_destroy();          // Destroy the parser
-bool IsGlobal(Symbol * sym);  // Is the specified symbol a global variable?
+int yyparse();                // Parser constructor
+int yylex_destroy();          // Parser destructor
+bool IsGlobal(Symbol * sym);  // Global variable flag
 
 
 /* Extern variables */
@@ -28,8 +28,6 @@ extern SyntaxTree * tree;
 extern SymbolTable * symtab;
 extern int gErrorCount;
 extern int gWarningCount;
-
-
 
 
 void PrintError (const char * msg) {
