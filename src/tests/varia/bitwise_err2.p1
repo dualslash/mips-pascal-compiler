@@ -1,0 +1,13 @@
+program realor;
+
+var
+  a, b, c: real;
+
+begin
+
+  a := 1;
+  b := 1.5;
+  c := a or b;
+  writereal (c)
+  
+end.
